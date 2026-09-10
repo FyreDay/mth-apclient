@@ -54,6 +54,8 @@ CommandKind verb_to_kind(const std::string &lower)
         return CommandKind::Trap;
     if (lower == "switches")
         return CommandKind::Switches;
+    if (lower == "kill")
+        return CommandKind::Kill;
     return CommandKind::Unknown;
 }
 

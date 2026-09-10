@@ -653,6 +653,11 @@ void App::enable_deathlink(bool on)
     pal::logf(pal::LogLevel::Info, "console: deathlink %s", on ? "enabled" : "disabled");
 }
 
+void App::kill_player()
+{
+    hooks_->kill_player();
+}
+
 void App::set_lit_lamps(std::uint32_t lamp_mask)
 {
     hooks_->set_lamp_console_override(lamp_mask);

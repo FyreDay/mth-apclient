@@ -401,6 +401,8 @@ void DevConsole::run_input()
             }
         }
         break;
+    case CommandKind::Kill:
+        sink_.kill_player();
     case CommandKind::Unknown:
         println("unknown command: " + cmd.verb + " (try 'help')");
         break;

@@ -68,6 +68,7 @@ class ICommandSink
     // offline test: drive the Mirrors End switches with no AP session. Bypasses the bound-save gate that
     // the durable write otherwise waits for, so it is a scratch-save tool.
     virtual void set_mirror_switch_override(bool on) = 0;
+    virtual void kill_player() = 0;
 };
 
 } // namespace mth

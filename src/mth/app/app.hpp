@@ -92,7 +92,7 @@ class App : public ICommandSink
     void fire_trap(int modifier_index, float seconds) override;
     void probe_switches() override;
     void set_mirror_switch_override(bool on) override;
-
+    void kill_player() override;
   private:
     void remember_successful_login(); // persist the attempted target once the server authenticates
     // Drop everything the previous AP session accumulated, so the next one behaves like the first since
