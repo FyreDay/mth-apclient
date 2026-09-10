@@ -1,7 +1,6 @@
 #include "mth/ui/login_window.hpp"
 
 #include <cstdio>
-
 #include <imgui.h>
 
 #include "mth/core/ap/ap_state.hpp" // ConnectionPhase
